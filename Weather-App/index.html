@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7f1d032bd9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="userInput">
+            <input type="text" id="userInput" placeholder="Enter Your Place Here...">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+        </div>
+        <div class="container">
+            <div class="main-container">
+                <div class="weatheContainer">
+                    <img id="weatherImg" src="./img/sun.png" alt="" width="80px">
+                    <p class="weatherCondition">Partly cloudy</p>
+                </div>   
+                <div class="weatherMain">
+                    <div id="temperature">26°C</div>
+                <div id="place">Kathmandu</div>
+                </div>
+                <div class="details">
+                    <div class="humidity">
+                        <img src="./img/humidity.png" width="40px" height="40px">
+                        <p id="humidityDetials">30%<br><span>Humidity</span></p>
+                    </div>
+                    <div class="wind">
+                        <img src="./img/wind.png" width="40px" height="40px">
+                        <p id="windDetials">5.6 Km<br><span>Wind Speed</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="invalid hide">
+                <img src="./img/profile-first-pr-dark.svg" alt="">
+                <p id="invalidMesssage">Invalid Place!!!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
