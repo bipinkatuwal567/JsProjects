@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #050525;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #F7AD00;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* background-color: #ffe0e5; */
+    background-color: #0547A0;
+
+    width: 50vmin;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    width: 55%;
+    height: 24vh;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid #000;
+}
+
+.img div{
+    background: url("./Media/luffy.jpg") left no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.details h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #F7AD00;
+}
+
+.details p{
+    font-size: 15px;
+    color: #fff;
+}
+
+#playing--btn{
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #000;
+    height: 6px;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+
+}
+
+#playing--btn::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #000;
+    border: 4px solid #F7AD00;
+    border-radius: 50%;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px auto 0 auto;
+}
+
+.controls div{
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    margin: 0 25px 20px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    color: #F7AD00;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.4);
+    background-color: #F7AD00;
+    color: #000;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 45vmin;
+    }
+
+    .circle{
+        font-size: 14px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .details h3{
+        font-size: 12px;
+    }
+
+    .details p{
+        font-size: 10px;
+    }
+
+    #playing--btn{
+        height: 3px;
+    }
+
+    #playing--btn::-moz-range-thumb{
+        height: 5px;
+        width: 5px;
+        border: 4px solid #fff;
+    }
+    
+    .controls div{
+        font-size: 10px;
+        height: 30px;
+        width: 30px;
+        margin: 0 10px 0 10px;
+    }
+}
